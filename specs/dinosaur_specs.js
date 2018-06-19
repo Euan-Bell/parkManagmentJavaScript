@@ -19,5 +19,9 @@ describe('Dinosaur', function (){
     assert.strictEqual(dinosaur.diet, 'Carnivore');
   });
 
+  it('should have visitorsPerDay', function (){
+    assert.strictEqual(dinosaur.visitorsPerDay, 500);
+  });
+
 
 });
