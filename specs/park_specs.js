@@ -15,9 +15,9 @@ describe('Park', function (){
     assert.strictEqual(park.name, 'Jurrassic Park');
   });
   //
-  // it('should have a diet', function (){
-  //   assert.strictEqual(dinosaur.diet, 'Carnivore');
-  // });
+  it('should have a ticket price', function (){
+    assert.strictEqual(park.ticketPrice, 50.00);
+  });
   //
   // it('should have visitorsPerDay', function (){
   //   assert.strictEqual(dinosaur.visitorsPerDay, 500);
