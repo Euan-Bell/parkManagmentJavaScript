@@ -8,7 +8,7 @@ describe('Park', function (){
 
   beforeEach(function () {
   // arrange
-      park = new Park('Jurrassic Park', 50.00, []);
+      park = new Park('Jurrassic Park', 50.00, [0]);
   })
 
   it('should have a name', function (){
@@ -19,9 +19,9 @@ describe('Park', function (){
     assert.strictEqual(park.ticketPrice, 50.00);
   });
   //
-  // it('should have visitorsPerDay', function (){
-  //   assert.strictEqual(dinosaur.visitorsPerDay, 500);
-  // });
+  it('should have dinosaurs', function (){
+    assert.deepStrictEqual(park.dinosaurs, []);
+  });
 
 
 });
